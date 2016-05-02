@@ -1,5 +1,6 @@
 <% @users.each do |user| %>
-  <%=user.username %>
+  <h2><%= link_to user.username.capitalize, user_path(user) %><br></h2>
+  <hr>
 <% end %>
 
 
